@@ -1,0 +1,79 @@
+CREATE TABLE authors (
+    author_ID INT,
+    author_FIRSTNAME VARCHAR(70),
+    author_LASTNAME VARCHAR(70),
+    author_BIOGRAPHY TEXT,
+    DOB DATE
+);
+
+CREATE TABLE publishers (
+    publisher_ID INT,
+    publisher_NAME VARCHAR(70),
+    country_of_ORIGIN VARCHAR(70)
+);
+
+CREATE TABLE books (
+    book_ID INT,
+    book_TITLE VARCHAR(70),
+    book_ISBN INT,
+    publication_DATE DATE,
+    book_PRICE INT(40)
+);
+
+CREATE TABLE books_authors (
+    book_ID INT,
+    author_ID INT
+);
+
+CREATE TABLE patients (
+    patient_ID INT,
+    patient_FIRSTNAME VARCHAR(70),
+    patient_LASTNAME VARCHAR(70),
+    DOB DATE,
+    phone_NUMBER INT,
+    patient_RECORD DATE
+);
+
+CREATE TABLE doctors (
+    doctor_ID INT,
+    doctor_FIRSTNAME VARCHAR(70),
+    doctore_LASTNAME VARCHAR(70),
+    medical_SPECIALITY VARCHAR(70),
+    year_LICENSED DATE
+);
+
+CREATE TABLE appointments (
+    appointment_ID INT,
+    DOT DATETIME,
+    reason_for_VISIT TEXT,
+    status_of_APPOINTMENT ENUM('Scheduled','Completed', 'Canceled', 'NO-SHOW') DEFAULT 'Scheduled'
+);
+
+CREATE TABLE departments (
+    department_ID INT,
+    department_NAME VARCHAR(70),
+    office_loc VARCHAR(70)
+);
+
+CREATE TABLE courses (
+    course_ID INT,
+    course_CODE VARCHAR(40),
+    course_TITLE VARCHAR(70),
+    NOC INT
+);
+
+
+
+CREATE TABLE university_departments (
+department_ID INT,
+department_NAME VARCHAR(70),
+department_office_loc VARCHAR(70)
+);
+
+
+CREATE TABLE course_table (
+course_ID INT,
+course_CODE INT,
+course_TITLE VARCHAR(150),
+NOC INT
+);
