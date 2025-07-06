@@ -49,19 +49,6 @@ CREATE TABLE appointments (
     status_of_APPOINTMENT ENUM('Scheduled','Completed', 'Canceled', 'NO-SHOW') DEFAULT 'Scheduled'
 );
 
-CREATE TABLE departments (
-    department_ID INT,
-    department_NAME VARCHAR(70),
-    office_loc VARCHAR(70)
-);
-
-CREATE TABLE courses (
-    course_ID INT,
-    course_CODE VARCHAR(40),
-    course_TITLE VARCHAR(70),
-    NOC INT
-);
-
 
 
 CREATE TABLE university_departments (
